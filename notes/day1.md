@@ -1,0 +1,1 @@
+I don't understand what this will lead to yet, but I want to learn SQL and Postgres. We have created a database and tables in it. Later, we will create order_items and payments and fill in the tables with data for practice.
