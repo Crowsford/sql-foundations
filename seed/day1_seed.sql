@@ -1,0 +1,38 @@
+INSERT INTO core.users (email, created_at) VALUES
+('alice@gmail.com',  now() - interval '20 days'),
+('bob@gmail.com',    now() - interval '18 days'),
+('carol@yahoo.com',  now() - interval '15 days'),
+('dave@mail.com',    now() - interval '12 days'),
+('eva@gmail.com',    now() - interval '10 days'),
+('frank@outlook.com',now() - interval '9 days'),
+('grace@gmail.com',  now() - interval '7 days'),
+('henry@mail.com',   now() - interval '5 days'),
+('irene@yahoo.com',  now() - interval '3 days'),
+('john@gmail.com',   now() - interval '1 days');
+INSERT INTO core.products (name, price) VALUES
+('Keyboard', 49.99),
+('Mouse', 19.99),
+('Monitor', 179.00),
+('USB-C Cable', 9.99),
+('Laptop Stand', 29.50),
+('Headphones', 89.00),
+('Webcam', 55.00),
+('Microphone', 120.00),
+('Desk Lamp', 24.00),
+('Chair', 199.99);
+INSERT INTO core.orders (user_id, order_ts, status) VALUES
+(1, now() - interval '19 days', 'paid'),
+(1, now() - interval '2 days',  'created'),
+(2, now() - interval '17 days', 'paid'),
+(2, now() - interval '8 days',  'canceled'),
+(3, now() - interval '14 days', 'paid'),
+(4, now() - interval '11 days', 'created'),
+(5, now() - interval '9 days',  'paid'),
+(5, now() - interval '6 days',  'paid'),
+(6, now() - interval '8 days',  'created'),
+(7, now() - interval '6 days',  'canceled'),
+(7, now() - interval '4 days',  'paid'),
+(8, now() - interval '4 days',  'paid'),
+(9, now() - interval '2 days',  'created'),
+(10,now() - interval '1 days',  'paid'),
+(10,now() - interval '3 hours', 'created');
